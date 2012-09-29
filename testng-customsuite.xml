@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Yabsta suite">
+  <test verbose="2" name="Default test" preserve-order="true">
+  	<classes>
+  		<class name="desktop.T_MainAssert" />
+  		<class name="desktop.T_LoginAssert" />
+  		<class name="desktop.T_RegisterAssert" />
+  		<class name="desktop.T_FooterAssert" />
+  		<class name="desktop.T_LoginFunctional" />
+  		<class name="desktop.T_ForgotNegative_1" />
+  		<class name="desktop.T_RegisterFuctional" />
+  		<class name="desktop.T_VideoFunctional" />
+  	</classes>
+  </test><!-- Default test -->
+</suite> <!-- Default suite -->
