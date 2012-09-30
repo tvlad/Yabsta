@@ -12,7 +12,7 @@ public class T_Andr_LoginFunctional extends AndrWebDriverInit {
 		
 		System.out.println(driver.getTitle());
 			
-		System.out.println(driver.getPageSource());
+//		System.out.println(driver.getPageSource());
 //		driver.findElement(By.xpath("//a[contains(text(),'Login')]")).click();
 //		driver.findElement(By.id("login_login")).sendKeys("wiara");
 //		driver.findElement(By.id("login_password")).sendKeys("tradiskancia");
