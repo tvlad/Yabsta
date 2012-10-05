@@ -2,9 +2,8 @@ package desktop;
 
 import static org.junit.Assert.fail;
 
+
 import java.util.concurrent.TimeUnit;
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -22,6 +21,8 @@ public class WebDrInit {
 	
 
 	@BeforeClass
+	
+	
 	public void setUp() throws Exception {
 		//driver = new InternetExplorerDriver();
 		//driver = new OperaDriver();
@@ -32,6 +33,8 @@ public class WebDrInit {
 		baseUrl = "http://home.yabsta.net";
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
+		
+		
 	}
 		
 		@AfterClass
@@ -43,4 +46,5 @@ public class WebDrInit {
 			}
 
 		}
+		
 }
