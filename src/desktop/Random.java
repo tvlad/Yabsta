@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Random {
 		
-	public String randomEmail(){
+	public static String randomEmail(){
 		
 		String allowedChars = "abcdefghiklmnopqrstuvwxyz";
 		String randommail = "";
@@ -22,7 +22,7 @@ public class Random {
 	}
 		
 	
-	public String randomLogin(){
+	public static String randomLogin(){
 		
 		String randomstring = "";
 		String allowedChars1 = "bcdfghklmnpqrstvwxz";
