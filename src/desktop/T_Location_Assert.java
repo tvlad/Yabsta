@@ -23,8 +23,7 @@ public class T_Location_Assert extends WebDrInit {
 	@Test
 	public void locationAss() {
 		page = PageFactory.initElements(driver, T_Location_Assert.class);
-		// List<WebElement> elements =
-		// driver.findElements(By.cssSelector("#location_domain"));
+		// List<WebElement> elements = driver.findElements(By.cssSelector("#location_domain"));
 
 		List<String> list = new ArrayList<String>();
 		File file = new File("listLocation.txt");

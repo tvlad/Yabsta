@@ -1,11 +1,13 @@
 package desktop;
 
+import java.io.IOException;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import desktop.Screen;
 
 public class T_MainAssert extends WebDrInit {
 	
@@ -20,7 +22,7 @@ public class T_MainAssert extends WebDrInit {
 	
 	
 	@Test (groups="assert")
-	public void testMainAssert() {
+	public void testMainAssert() throws IOException {
 		
 		isElementPresent(driver, By.linkText("Login"));
 				
@@ -44,6 +46,7 @@ public class T_MainAssert extends WebDrInit {
 		boolean a1 = driver.findElement(By.cssSelector("img[alt=\"powered by Yabsta\"]")).isEnabled();
 		System.out.println(a1);
 		Assert.assertEquals(true, a1);
+		Screen.testScreen(driver, "MainScreen");
 
 	}
 
